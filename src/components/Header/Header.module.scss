@@ -1,12 +1,12 @@
-*{
-    font-family: Arial, Helvetica, sans-serif ;
-    font-size: large;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito+Sans:ital,wght@0,900;1,300&display=swap');
+
 .wrapper{
     width: 100%;
     color: white;
     display: flex;
     flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: medium;
 }
 .fakeHeader{
     height: 5vh;
@@ -14,14 +14,13 @@
     display: flex;
     justify-content: space-between;
 }
-.fakeHeader img{
-    width: 25px;
-    height: 25px;
+.inf img{
+    width: 5%;
 }
 .inf{
-    width: 15%;
+    width: 30%;
     display: flex;
-    margin-left: 5vh;
+    margin-left: 3vh;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -34,14 +33,18 @@
     color: rgb(150, 150, 150);
     text-decoration: underline;
 }
+.location img{
+    width: 30%;
+}
 .user{
-    width: 50vh;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-right: 20vh;
 }
 .user > select{
+    font-family: 'Nunito Sans', sans-serif;
     width: 30%;
     height: 22px;
     color: white;
@@ -64,30 +67,37 @@
     background-color: rgb(48, 48, 48);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    padding-right: 20vh;
 }
+
 .mainHeader img{
-    width: 30vh;
+    width: 15%;
+    height: 70%;
     margin-left: 6vh ;
+    margin-top: 5px;
 }
+.mainHeader a:first-child{
+    display: flex;
+    flex-direction: wrap;
+
+}
+
 .mainHeader a{
     color: white;
     text-decoration: none;
     margin-right: 10vh;
 }
-.mainHeader a:hover {
-    font-size: larger;
-}
 .basket{
-    width: 12%;
+    width: 50%;
     height: 45px;
     background-color: white;
     border-radius: 50px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 .basket div{
-    width: 40px;
+    width: 80%;
     height: 40px;
     color:white;
     background-color: rgb(81, 81, 81);
@@ -97,10 +107,6 @@
     border-radius: 50px;
     margin: 0 3px;
 }
-.basket img{
-    width: 15px;
-   
-}
 .basket button{
     width: 70%;
     height: 40px;
@@ -108,7 +114,63 @@
     border-radius: 50px;
     background-color: red;
     color: white;
+    font-family: 'Nunito Sans', sans-serif;
+
 }
 .basket p{
-    margin-left: 8px;
+    margin : 0 8px;
+}
+
+@media (max-width: 576px) {
+    .wrapper{
+        width: 100%;
+    }
+    .inf{
+        display: none;
+    }
+    .user{
+        display: none;
+    }
+    .fakeHeader{
+        background-color: rgb(48, 48, 48);
+    }
+    .location {
+        width: 20%;
+        margin-left: 20vh;
+    }
+    .location img{
+        width: 75%;
+        height: 30px;
+
+    }
+    .mainHeader{
+        width: 57%;
+        height: 15vh;
+        overflow: scroll;
+    }
+    .mainHeader a:first-child h1{
+        width: 50%;
+        display: none;
+    }
+    .basket{
+        display: none;
+    }
+    .mainHeader a img{
+        width: 100%;
+        margin-bottom: 7vh;
+    }
+    .mainHeader img{
+        width: 20%;
+        height: 30px;
+        margin-bottom: 7vh;
+        margin-right: 10vh;
+        
+    }
+    .mainHeader a{
+        width: 20%;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+   
 }

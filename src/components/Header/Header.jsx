@@ -29,20 +29,25 @@ const Header = () => {
       </div>
 
       <div className={scss.mainHeader}>
+        
         <Link to="/">
-            <img src="https://image4.owler.com/logo/domino-s-pizza_owler_20191127_062227_original.png" alt="" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Domino%27s_pizza_logo.svg/2036px-Domino%27s_pizza_logo.svg.png" alt="" />
+            <h1>Domino's Pizza</h1>
         </Link>
+
         <Link to="/promo">Promo</Link>
         <Link to="/pizza">Pizza</Link>
         <Link to="/drinks">Drinks</Link>
         <Link to="/sides">Sides</Link>
         <Link to="/dessert">Dessert</Link>
+
         <div className={scss.basket}>
             <div>
                 <p>00</p>
             </div>
             <button>Checkout</button>
         </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png" alt="" />
       </div>
 
 
