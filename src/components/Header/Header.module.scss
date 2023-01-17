@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito+Sans:ital,wght@0,900;1,300&display=swap');
+
+.wrapper{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: medium;
+}
+.fakeHeader{
+    height: 5vh;
+    background-color: rgb(105, 105, 105);
+    display: flex;
+    justify-content: space-between;
+}
+.inf img{
+    width: 5%;
+}
+.inf{
+    width: 30%;
+    display: flex;
+    margin-left: 3vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.location{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50vh;
+    color: rgb(150, 150, 150);
+    text-decoration: underline;
+}
+.location img{
+    width: 30%;
+}
+.user{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 20vh;
+}
+.user > select{
+    font-family: 'Nunito Sans', sans-serif;
+    width: 30%;
+    height: 22px;
+    color: white;
+    background-color:rgb(105, 105, 105);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.user a{
+    width: 30%;
+    height: 20px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.mainHeader{
+    height: 10vh;
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    align-items: center;
+    padding-right: 20vh;
+}
+.mainHeader img{
+    width: 15%;
+    height: 70%;
+    margin-left: 6vh ;
+    margin-top: 5px;
+}
+.mainHeader a:first-child{
+    display: flex;
+    flex-direction: wrap;
+}
+.mainHeader a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10vh;
+}
+.basket{
+    width: 40%;
+    height: 45px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.basket div{
+    width: 70%;
+    height: 40px;
+    color:white;
+    background-color: rgb(81, 81, 81);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 0 3px;
+}
+.food{
+    width: 100%;
+    display: flex;
+
+}
+.basket button{
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+.basket p{
+    margin : 0 8px;
+}
+
+@media(max-width: 1024px){
+
+    .mainHeader h1{
+        font-size: medium;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper{
+        width: 100%;
+        height: 10vh;
+    }
+    .inf{
+        display: none;
+    }
+    .user{
+        display: none;
+    }
+    .fakeHeader{
+        background-color: rgb(48, 48, 48);
+    }
+    .location {
+        width: 100%;
+        margin-left: 20vh;
+    }
+    .location img{
+        width: 75%;
+        height: 30px;
+    }
+    .mainHeader{
+        height: 12vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .food{
+        display: none;
+    }
+    .mainHeader h1{
+        display: none;
+    }
+    .basket{
+        display: none;
+    }
+    .mainHeader a img{
+        width: 100%;
+    }
+    .mainHeader img{
+        width: 10%;
+        height: 30px;
+        margin-bottom: 1vh;
+    }
+    #pic{
+        margin-left: 20vh;
+    }
+}
